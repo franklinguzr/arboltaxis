@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+
+<AnchorPane prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.flota.taxis.controlador.ControladorVerReportes">
+   <children>
+      <Label layoutX="286.0" layoutY="44.0" scaleX="2.0" scaleY="2.0" text="Ver Reportes" AnchorPane.leftAnchor="260.0" AnchorPane.topAnchor="20.0">
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.9650793654578073" startX="0.9968253953116281" startY="0.16825394403366817">
+               <stops>
+                  <Stop color="#f82020" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+       <Button layoutX="126.0" layoutY="90.0" mnemonicParsing="false" onAction="#presionarPropietarios" prefHeight="49.0" prefWidth="128.0" text="Propietarios" textFill="#380101" AnchorPane.leftAnchor="126.0" AnchorPane.topAnchor="90.0" />
+       <Button layoutX="352.0" layoutY="161.0" mnemonicParsing="false" onAction="#presionarConductores" prefHeight="49.0" prefWidth="128.0" text="Conductores" AnchorPane.leftAnchor="352.0" AnchorPane.topAnchor="161.0" />
+      <Button layoutX="126.0" layoutY="161.0" mnemonicParsing="false" onAction="#presionarTalleres" prefHeight="49.0" prefWidth="128.0" text="Talleres" AnchorPane.leftAnchor="126.0" AnchorPane.topAnchor="161.0" />
+      
+      <Button layoutX="352.0" layoutY="90.0" mnemonicParsing="false" onAction="#presionarTaxis" prefHeight="49.0" prefWidth="128.0" text="Taxis" textFill="#020100" AnchorPane.leftAnchor="352.0" AnchorPane.topAnchor="90.0" />
+      <Button layoutX="264.0" layoutY="252.0" mnemonicParsing="false" onAction="#presionarCancelar" text="Cancelar" textFill="#ef2828" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="270.0" />
+   </children>
+</AnchorPane>

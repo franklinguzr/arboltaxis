@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="653.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.flota.taxis.controlador.ControladorInicio">
+   <children>
+      <Label layoutX="295.0" layoutY="22.0" prefHeight="17.0" prefWidth="95.0" scaleX="2.0" scaleY="2.0" text="Flota taxis FAL" textAlignment="CENTER" AnchorPane.leftAnchor="295.0" AnchorPane.rightAnchor="263.0" AnchorPane.topAnchor="22.0">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.7079365321568081">
+               <stops>
+                  <Stop color="#ff5252" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <Label layoutX="285.0" layoutY="61.0" text="Bienvenido" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="285.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.7079365321568081">
+               <stops>
+                  <Stop color="#ff5252" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <Button layoutX="501.0" layoutY="113.0" mnemonicParsing="false" onAction="#presionarTurno" text="Registrar turno" textFill="#e24718e3" AnchorPane.leftAnchor="501.0" />
+      <Button layoutX="507.0" layoutY="207.0" mnemonicParsing="false" onAction="#presionarReportes" text="Ver Reportes" textFill="#e24718" AnchorPane.leftAnchor="507.0" />
+      <Button layoutX="266.0" layoutY="207.0" mnemonicParsing="false" onAction="#presionarConductor" text="Registrar Conductor" textFill="#e24718" AnchorPane.leftAnchor="266.0" />
+      <Button layoutX="31.0" layoutY="113.0" mnemonicParsing="false" onAction="#presionarTaxi" text="Registrar Taxi" textFill="#e04419d7" AnchorPane.leftAnchor="31.0" />
+      <Button layoutX="28.0" layoutY="207.0" mnemonicParsing="false" onAction="#presionarTaller" text="Registrar Taller" textFill="#e24718" AnchorPane.leftAnchor="28.0" />
+      <Button layoutX="262.0" layoutY="113.0" mnemonicParsing="false" onAction="#presionarPropietario" text="Registrar Propietarios" textFill="#e04419cb" AnchorPane.leftAnchor="262.0" />
+      <Label layoutX="369.0" layoutY="278.0" text="Franklin Garces - Angel Vanegas - Alejandro Pérez" textFill="#b7aaaa" />
+     </children>
+</AnchorPane>

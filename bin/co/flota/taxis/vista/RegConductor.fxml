@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.flota.taxis.controlador.ControladorRegConductor">
+   <children>
+      <Label layoutX="280.0" layoutY="22.0" prefHeight="13.0" prefWidth="115.0" scaleX="2.0" scaleY="2.0" text="Registrar Conductor" AnchorPane.leftAnchor="280.0" AnchorPane.rightAnchor="205.0" AnchorPane.topAnchor="22.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.9015872773670014" endY="0.9492063454219273" startX="0.9015873000735327" startY="0.457142820812407">
+               <stops>
+                  <Stop color="#d91515" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <Label layoutX="48.0" layoutY="106.0" text="Nombre*" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="85.0" />
+      <TextField fx:id="campoApellido" layoutX="101.0" layoutY="112.0" AnchorPane.leftAnchor="98.0" AnchorPane.topAnchor="122.0" />
+      <Label layoutX="58.0" layoutY="116.0" text="Contraseña*" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="125.0" />
+      <Label layoutX="58.0" layoutY="116.0" text="Género*" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="85.0" />
+      <Label layoutX="301.0" layoutY="165.0" text="Celular" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="165.0" />
+      <Label layoutX="58.0" layoutY="116.0" text="Correo" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="205.0" />
+      <Label layoutX="58.0" layoutY="116.0" text="Identificación*" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="165.0" />
+      <Label layoutX="58.0" layoutY="116.0" text="Apellido*" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="125.0" />
+      <TextField fx:id="campoNombre" layoutX="101.0" layoutY="69.0" AnchorPane.leftAnchor="98.0" AnchorPane.topAnchor="82.0" />
+      <TextField fx:id="campoId" layoutX="108.0" layoutY="151.0" AnchorPane.leftAnchor="98.0" AnchorPane.topAnchor="162.0" />
+      <TextField fx:id="campoCorreo" layoutX="108.0" layoutY="194.0" AnchorPane.leftAnchor="98.0" AnchorPane.topAnchor="202.0" />
+      <TextField fx:id="campoCelular" layoutX="375.0" layoutY="161.0" AnchorPane.leftAnchor="375.0" AnchorPane.topAnchor="162.0" />
+      <TextField fx:id="campoContraseña" layoutX="386.0" layoutY="138.0" AnchorPane.leftAnchor="375.0" AnchorPane.topAnchor="122.0" />
+      <ButtonBar layoutX="336.0" layoutY="242.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="20.0">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#presionarAceptar" text="Aceptar">
+               <textFill>
+                  <LinearGradient endX="0.8476189749581472" endY="0.9492063454219273" startX="0.9015873000735327" startY="0.692063467843192">
+                     <stops>
+                        <Stop color="#d91515" />
+                        <Stop color="#cc1818" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill></Button>
+            <Button mnemonicParsing="false" onAction="#presionarCancelar" text="Cancelar" textFill="#d02121" />
+        </buttons>
+      </ButtonBar>
+      <ChoiceBox fx:id="campoGenero" layoutX="375.0" layoutY="81.0" prefWidth="150.0" AnchorPane.leftAnchor="375.0" AnchorPane.topAnchor="82.0" />
+   </children>
+</AnchorPane>
